@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './hearder.component.css'
 })
 export class HearderComponent {
+  imagenUrl: string = 'escudo.png'; // Ruta de la imagen en "assets"
 
 }
