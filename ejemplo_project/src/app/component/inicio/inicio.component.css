@@ -1,0 +1,43 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #005b3d;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cursos ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cursos li {
+    margin-bottom: 10px;
+  }
+  
+  .distribuidores {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #005b3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
