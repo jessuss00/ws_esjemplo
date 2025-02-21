@@ -1,43 +1,98 @@
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  h2 {
-    color: #005b3d;
-  }
-  
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .product-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .cursos ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .cursos li {
-    margin-bottom: 10px;
-  }
-  
-  .distribuidores {
-    text-align: center;
-  }
-  
-  button {
-    background-color: #005b3d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+section {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #00954C; /* Verde Betis */
+  border-bottom: 2px solid #00954C;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+section p {
+  line-height: 1.6;
+  color: #333;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 8px;
+}
+
+section a {
+  color: #00954C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+#ultimo-partido-ganado {
+  border-left: 5px solid #4CAF50; /* Verde éxito */
+}
+
+#ultimo-partido-perdido {
+  border-left: 5px solid #F44336; /* Rojo error */
+}
+
+#ultimo-partido-empatado {
+  border-left: 5px solid #FFC107; /* Amarillo advertencia */
+}
+
+#ultimo-fichaje {
+  background-color: #E8F5E9; /* Verde claro */
+}
+
+#proximos-partidos ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#proximos-partidos ul li:last-child {
+  border-bottom: none;
+}
+.button, a.button {
+  display: inline-block;
+  background-color: #00954C; /* Verde Betis */
+  color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Para quitar el subrayado del enlace */
+}
+a{
+  text-decoration: none;}
+
+.button:hover, a.button:hover {
+  background-color: #007A3D; /* Un verde más oscuro para el hover */
+  transform: translateY(-2px);
+  color: #ddd;
+  text-decoration: none; /* Para quitar el subrayado del enlace */
+}
+
+.button:active, a.button:active {
+  background-color: #005A24;
+  transform: translateY(0);
+}

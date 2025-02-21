@@ -1,0 +1,73 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+  margin-right: 250px; /* Ancho de tu sidebar + un poco de espacio */
+  overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+}
+
+.app-sidebar {
+  width: 180px;
+  position: fixed;
+  top: 10vh;
+  right: 9px;
+  height: calc(100vh - 10vh - 80px); /* Ajusta esto según la altura del header y footer */
+  overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+}
+
+.app-footer {
+  height: 60px; /* Ajusta esto a la altura real de tu footer */
+  position: relative; /* Cambiado de absolute a relative */
+  margin-top: auto; /* Empuja el footer hasta el final del contenedor */
+}
+
+/* Estilos específicos para la tabla */
+.table-container {
+  max-height: calc(100vh - 20vh - 140px); /* Ajusta según la altura del header y footer */
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+      flex-direction: column;
+  }
+
+  .app-main {
+      margin-right: 0;
+      margin-bottom: 0;
+  }
+
+  .app-sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .table-container {
+      max-height: none;
+      overflow-y: visible; /* Permite que la tabla crezca sin scroll */
+  }
+}

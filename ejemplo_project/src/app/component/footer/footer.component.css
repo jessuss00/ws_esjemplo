@@ -1,5 +1,14 @@
-
-    footer {
+:host {
+    display: block;
+    background-color: #92c58b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+  
+   
+   footer {
         background-color: #92c58b;
         color: white;
         text-align: center;

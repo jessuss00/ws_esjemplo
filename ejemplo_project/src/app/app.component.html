@@ -1,7 +1,13 @@
-<!--Esto ssiempre visible-->
-<app-hearder></app-hearder>
-<!--Esto depende de la ruta-->
-<!--<app-content></app-content>-->
-<router-outlet></router-outlet>
-<!--Esto ssiempre visible-->
-<app-footer></app-footer>
+<div class="app-container">
+    <app-hearder class="app-header"></app-hearder>
+    
+    <div class="app-content">
+      <main class="app-main">
+        <router-outlet></router-outlet>
+      </main>
+      <app-barra-lateral class="app-sidebar"></app-barra-lateral>
+    </div>
+    
+    <app-footer class="app-footer"></app-footer>
+  </div>
+  
