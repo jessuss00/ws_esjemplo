@@ -24,9 +24,9 @@ export class ListComponent implements OnInit {
     });
   }
   public getImagenByPokemon(pokemon: Pokemon): string {
-    const urlImage ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+    const urlImage ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown"
     const urlSplited = pokemon.url.split('/');
     const id = urlSplited[urlSplited.length - 2];
-    return urlImage + "/" + id + ".png";
+    return urlImage + "/" + id + ".gif";
   }
 }
