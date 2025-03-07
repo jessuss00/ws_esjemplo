@@ -1,0 +1,31 @@
+footer {
+    background: linear-gradient(90deg, #0077ff, #00ccff);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: #ffdd57;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}

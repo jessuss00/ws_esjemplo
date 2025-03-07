@@ -1,0 +1,13 @@
+<h1>Lista de Pokemons</h1>
+
+
+<div class="contenedor">
+    
+    <div *ngFor="let pokemon of pokemons" class="tarjeta">
+        <img src="{{getImagenByPokemon(pokemon)}}" alt="{{pokemon.name}}">
+        <h3>{{pokemon.name}}</h3>
+        <a href="#">Ver detalles</a>
+    </div>
+    
+  
+</div>
