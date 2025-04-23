@@ -1,0 +1,12 @@
+<h1>Lista de Cócteles</h1>
+
+  <div *ngFor="let drink of cocktails" style="border: 1px solid #ccc; padding: 16px; margin: 10px; border-radius: 8px;">
+    <h2>{{ drink.strDrink }}</h2>
+    <img [src]="drink.strDrinkThumb" [alt]="drink.strDrink" width="300" style="border-radius: 8px;" />
+    <p>{{ drink.strInstructions }}</p>
+  </div>
+
+
+<ng-template #cargando>
+  <p>Cargando cócteles...</p>
+</ng-template>
